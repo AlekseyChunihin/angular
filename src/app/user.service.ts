@@ -41,7 +41,7 @@ export class UserService {
 
   add(data:string,flag:boolean){
       if(flag)this.activeUsers.push(data);
-      else this.inactiveUsers.push(data);
+      else this.unactiveUsers.push(data);
   }
 
 }
