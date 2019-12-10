@@ -1,5 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+/e2e
+/*.json
+/*.js
+/browserslist
+/src/assets
+/src/environments
+/src/*.*
+
 # compiled output
 /dist
 /tmp
