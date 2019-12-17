@@ -1,0 +1,15 @@
+a{
+	background-color: gray;
+	padding: 15px;
+	margin-right: 5px;
+	text-decoration: none;
+	color: black; 
+}
+a:active { 
+	color: white; 
+	}
+
+.active{
+	background-color: green;
+	color: white; 
+}
