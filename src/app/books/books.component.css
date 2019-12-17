@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 80%;
+  border: 1px solid black;
+  margin-left: 10%;
+}
+
+td,tr,th {
+  border: 1px solid blue;
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.w{
+	width: 70px;
+	text-align: center;
+}
