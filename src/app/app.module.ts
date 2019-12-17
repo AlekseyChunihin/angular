@@ -9,7 +9,7 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { BookComponent } from './book/book.component';
 
 import { BookService } from './services/book.service';
-
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes=[
 {path:'books/:id', component:BookComponent},
@@ -28,6 +28,8 @@ const routes: Routes=[
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes),
     AgGridModule.withComponents([])
   ],
