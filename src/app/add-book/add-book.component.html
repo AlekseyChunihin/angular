@@ -1,8 +1,11 @@
 <H1>Добавить книгу</H1>
-<H3>Название: </H3><input #bookName >
-<H3>Автор: </H3><input #bookAutor >
-<H3>Год выпуска: </H3><input #bookYear >
+<form [formGroup]="fG">
+<H3>*Название: </H3><input  formControlName="nameControl" >
+<H3>*Автор: </H3><input formControlName="authorControl">
+<H3>*Год издания: </H3><input formControlName="yearControl" >
+</form>
 <p>
-<button (click)="addBook(bookName.value,bookAutor.value,bookYear.value)">Добавить</button>
-   
-</p>
+<button (click)="addBook()">Добавить</button>
+</p>   
+ <div *ngIf="!flag" class="error">Заполните все поля! (Внимание, название должно начинаться с большой буквы!) </div>
+
